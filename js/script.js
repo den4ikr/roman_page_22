@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	$(".header__burger").click(function(event){
+		$(".header__big-menu").toggleClass("active");
+		$(".header__main").toggleClass("active");
+		$(".meal__block").toggleClass("active");
+		$("body").toggleClass("lock");
+		$("body").toggleClass("lock");
+	})
+	$(".meal__img_1").click(function(event){
+		$(".meal__box_1").toggleClass("active");
+	})
+	$(".meal__img_2").click(function(event){
+		$(".meal__box_2").toggleClass("active");
+	})
+	$(".meal__img_3").click(function(event){
+		$(".meal__box_3").toggleClass("active");
+	})
+	$(".meal__img_4").click(function(event){
+		$(".meal__box_4").toggleClass("active");
+	})
+})

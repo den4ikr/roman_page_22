@@ -1,0 +1,229 @@
+/*Подключаю файл обнуления стилей*/
+@import "nullstyle.scss";
+@import "header.scss";
+@import "footer.scss";
+/*Подключаю семейство шрифтов*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+*{
+	font-family: Montserrat;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.block {}
+
+.block__menu {}
+
+.block__menu-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.block__menu-block {}
+
+.header__burger {}
+
+.menu__logo {
+	padding-right: 350px;
+}
+
+.header__app {}
+
+.header__app-item {}
+
+.block__sub-title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 32px;
+	padding-top: 103px;
+	padding-left: 211px;
+	color: #000000;
+}
+
+.block__row {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 112px;
+	align-items: center;
+}
+
+.block__block {}
+
+.block__small-num {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.515em;
+	color: #000000;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		background-color: #000;
+		width: 29px;
+		height: 1px;
+		top: 45%;
+		left: 120%;
+	}
+}
+
+.block__big-num {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 98px;
+	color: #000000;
+	padding-right: 120px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		background-color: #FFCC00;
+		width: 148px;
+		height: 3px;
+		top: 50%;
+		left: 70%;
+	}
+}
+
+.block__title {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 98px;
+	color: #000000;
+}
+
+.title_2{
+	padding-right: 410px;
+}
+
+.title_3{
+	font-size: 65px;
+}
+
+.title_4{
+	padding-right: 200px;
+}
+
+.title_5{
+	padding-right: 335px;
+}
+
+.block__sub-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block__sub-block {}
+
+.block__sub-img {
+	padding-top: 120px;
+	p{
+		font-style: normal;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 12px;
+		color: #B4B4B4;
+		padding-top: 10px;
+	}
+	img{
+		padding-left: 37px;
+	}
+}
+
+.block__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 209.4%;
+	max-width: 762px;
+	color: #000000;
+	padding-left: 150px;
+	padding-top: 53px;
+}
+
+.full_3{
+	background: url("../img/bg_3.png") 0 0 / cover no-repeat;
+}
+
+@media(max-width: 1024px) {
+	.title_5{
+		padding-right: 0px;
+	}
+	.title_4{
+		padding-right: 200px;
+	}
+	.title_2{
+		padding-right: 0px;
+	}
+	.full_3{
+		background: url("../img/bg_3.png") -1000px 0 / cover no-repeat;
+	}
+	.block__sub-title{
+		padding-left: 10px;
+	}
+	.block__big-num{
+		margin-left: 10px;
+	}
+	.block__big-num:after{
+		content: "";
+		left: 100px;
+	}
+	.block_1{
+		display: none;
+	}
+	.block__row{
+		display: block;
+	}
+	.menu__logo{
+		display: none;
+	}
+	.block__row:first-child{
+		display: none;
+	}
+	.block__title{
+		padding-left: 10px;
+	}
+	.block__text{
+		padding-left: 10px;
+	}
+}
+@media(max-width: 768px) {
+	.block__sub-title{
+		padding-top: 38px;
+	}
+	.block__row{
+		padding-top: 59px;
+	}
+}
+@media(max-width: 648px) {
+	.full_3{
+		background: url("../img/bg_3.png") -800px 0px / cover no-repeat;
+	}
+	.block__title{
+		font-size: 40px;
+	}
+	.block__text{
+		padding-right: 10px;
+	}
+}
+@media(max-width: 508px) {
+	.full_3{
+		background: url("../img/bg_3.png") -800px 0 / cover no-repeat;
+	}
+}

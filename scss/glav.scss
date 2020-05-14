@@ -1,0 +1,421 @@
+/*Подключаю файл обнуления стилей*/
+@import "nullstyle.scss";
+@import "header.scss";
+@import "footer.scss";
+/*Подключаю семейство шрифтов*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+
+*{
+	font-family: Montserrat;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.meal__block {
+	padding-top: 50px;
+}
+
+.meal__block.active{
+	display: none;
+}
+
+.meal__block-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block {
+	background: url("../img/bg_3.png") 0 0 / cover no-repeat;
+}
+
+
+.block__menu {}
+
+.block__menu-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.block__menu-block {}
+
+.header__burger {}
+
+.menu__logo {
+	padding-right: 350px;
+}
+
+.header__app {}
+
+.header__app-item {}
+
+.meal__block-block {}
+
+.meal__block-block-1 {
+	position: relative;
+}
+
+.meal__block-block-2 {
+	position: relative;
+}
+
+.meal__block-block-3 {
+	position: relative;
+}
+
+.meal__block-block-4 {
+	position: relative;
+}
+
+.meal__img {
+	img{
+		max-width: 300px;
+	}
+}
+
+.meal__img_1 {}
+
+.meal__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.meal__box_1{
+	position: absolute;
+	left: 30%;
+	top: 5%;
+	display: none;
+}
+
+.meal__box_1.active{
+	display: block;
+}
+
+.meal__box_2{
+	position: absolute;
+	left: -30%;
+	top: 5%;
+	display: none;
+}
+
+.meal__box_2.active{
+	display: block;
+}
+
+.meal__box_3{
+	position: absolute;
+	left: -30%;
+	top: 5%;
+	display: none;
+}
+
+.meal__box_3.active{
+	display: block;
+}
+
+.meal__box_4{
+	position: absolute;
+	left: -30%;
+	top: 5%;
+	display: none;
+}
+
+.meal__box_4.active{
+	display: block;
+}
+
+.meal__box-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.meal__box-text {
+	padding-top: 18px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	max-width: 214px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+
+
+.meal__box-block {
+	width: 200px;
+	height: 63px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.meal__box-block-item {
+	p:first-child{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 16px;
+		color: #000000;
+	}
+	p:last-child{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		line-height: 11px;
+		color: #000000;
+	}
+}
+
+.meal__sub-title {
+	padding-top: 13px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+}
+
+.meal__title p{
+	font-style: normal;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 60px;
+	color: #000000;
+	span{
+		color: #FFCC00;
+	}
+}
+
+.meal__title {}
+
+.meal__title-block {}
+
+.meal__title-row{
+	display: flex;
+	justify-content: space-between;
+	margin-top: -100px;
+	align-items: center;
+}
+
+.meal__num {}
+
+.meal__img {
+	padding-top: 50px;
+}
+
+.meal__text {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	color: #B4B4B4;
+	margin-left: -25px;
+	padding-top: 20px;
+}
+
+.meal__title-title {}
+
+.man {}
+
+.man__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.man__block {}
+
+.man__num-block {}
+
+.man__num-text {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.515em;
+	color: #000000;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		background-color: #000;
+		height: 1px;
+		width: 29px;
+		top: 0;
+		left: 0;
+	}
+}
+
+.man__num-img {
+	transform:translate(0,200px);
+}
+
+.man__text p{
+	font-style: normal;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 98px;
+	color: #000000;
+	padding-left: 70px;
+}
+
+.man__img {
+	position: relative;
+	background: url("../img/man.png") 50px 0 / 100% no-repeat;
+	width: 600px;
+	height: 468px;	
+}
+
+.man__main-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 50px;
+	max-width: 957px;
+	margin: 0 auto;
+	color: #000000;
+}
+
+.man__sub-text {}
+
+@media(max-width: 1024px) {
+	.man{
+		position: absolute;
+	}
+	.man__text{
+		padding-top: 50px;
+	}
+	.man__main-text{
+		padding-top: 200px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.man__img{
+		position: absolute;
+		left: 0%;
+		width: 600px;
+		top: 0;
+	}
+	.man__block:first-child{
+		display: none;
+	}
+	.menu__logo{
+		padding-right: 0;
+	}
+	.meal__block-row{
+		display: none;
+	}
+	.meal__title-title{
+		padding-top: 300px;
+		p{
+			line-height: 105px;
+			padding-left: 10px;
+		}
+	}
+	.meal__title-block:first-child{
+		display: none;
+	}
+}
+@media(max-width: 845px) {
+
+	.meal__title-title p{
+		font-size: 65px;
+	}
+}
+@media(max-width: 768px) {
+	.meal__block{
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			width: 255px;
+			height: 300px;
+			top: 50%;
+			right: 0;
+			background: url("../img/small_meal.png") 0 0 / 100% no-repeat;
+		}
+	}
+	.header__burger{
+		position: relative;
+		z-index: 2;
+	}
+	.meal__title-title{
+		margin-top: -200px;
+	}
+	.block__menu-block:last-child{
+		display: none;
+}
+	.menu__logo{
+		padding-right: 10px;
+	}
+}
+@media(max-width: 670px) {
+	.meal__title-title{
+		p{
+			font-size: 55px;
+		}
+	}
+}
+@media(max-width: 626px) {
+	.man__img {
+		background: url("../img/man.png") 0 50px / 100% no-repeat;
+		width: 400px;
+		height: 468px;	
+	}
+	.man__main-text{
+		padding-top: 50px;
+	}
+}
+@media(max-width: 524px) {
+	.man__text p{
+		padding-left: 10px;
+	}
+}
+@media(max-width: 421px) {
+	.man__text p{
+		font-size: 50px;
+		padding-left: 20px;
+	}
+	.man__img{
+		display: none;
+	}
+}
+@media(max-width: 400px) {
+	.meal__title-title{
+		p{
+			font-size: 45px;
+			padding-right: 10px;
+		}
+	}
+}
+@media(max-width: 340px) {
+	.meal__title-title p{
+		font-size: 40px;
+	}
+}
+@media(max-width: 320px) {
+	.meal__block{
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			width: 255px;
+			height: 300px;
+			top: 30%;
+			right: 0;
+			background: url("../img/small_meal.png") 0 0 / 100% no-repeat;
+		}
+	}
+}
